@@ -297,6 +297,7 @@ details.more-facts summary::after{content:" +"}details.more-facts[open] summary:
 @media(max-width:820px){.si-lead{grid-template-columns:1fr}.si-lead img{min-height:0;aspect-ratio:16/9}.si-three{grid-template-columns:1fr}.si-rows{grid-template-columns:1fr}.si-mast{flex-direction:column;gap:4px}}
 </style>
 <style>.about{display:grid;gap:16px;max-width:760px}.about-bio{font-family:var(--display);font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.45;margin:0}.about-next{font-size:1.1rem;font-weight:600;margin:0;padding-left:14px;border-left:3px solid #d6246e}</style>
+<style>.lede-about{display:grid;gap:16px;max-width:820px;margin:clamp(22px,4vw,40px) 0 clamp(18px,3vw,28px)}.lede-about .lede{margin:0}</style>
 </head>
 <body>
 
@@ -319,7 +320,11 @@ details.more-facts summary::after{content:" +"}details.more-facts[open] summary:
     <button class="replay" id="replay">Run the edit again</button>
     <span class="bigstamp" aria-label="Verdict: ship">SHIP</span>
   </div>
-  <p class="lede">I lead storytelling for a cyber security vendor's MSP business. I do not trust a first draft, mine or a machine's. So I built eight AI editors that check, argue with and correct every piece before it ships. In four months that system and I made nearly 200 pieces of work. Each dot below is one piece.</p>
+  <div class="lede-about" id="about">
+    <p class="about-bio">I'm Jeremy Fuchs. I started as a reporter at Sports Illustrated, where I learned to find the story inside a complicated subject and check every word of it. For six years I've done the same work in cyber security marketing, most recently building the partner narrative function in Check Point's MSP division. I live in New Jersey with my family. I drink too much Diet Coke, keep grilling until it snows, and am a long-suffering Rangers fan.</p>
+    <p class="about-next">Next, I want to lead the content, editorial or narrative work of a company that believes a good story moves a business, and build the team and the system that does it.</p>
+    <p class="lede">I do not trust a first draft, mine or a machine's. So I built eight AI editors that check, argue with and correct every piece before it ships. In four months that system and I made nearly 200 pieces of work. Each dot below is one piece.</p>
+  </div>
 
   <div class="wallbox">
     <div class="wallhead">
@@ -539,13 +544,7 @@ details.more-facts summary::after{content:" +"}details.more-facts[open] summary:
 </section>
 
 
-<section id="about" style="border-top:1px solid var(--rule)">
-  <div class="about">
-    <span class="slug">About</span>
-    <p class="about-bio">I'm Jeremy Fuchs. I started as a reporter at Sports Illustrated, where I learned to find the story inside a complicated subject and check every word of it. For six years I've done the same work in cyber security marketing, most recently building the partner narrative function in Check Point's MSP division. I live in New Jersey with my family. I drink too much Diet Coke, keep grilling until it snows, and am a long-suffering Rangers fan.</p>
-    <p class="about-next">Next, I want to lead the content, editorial or narrative work of a company that believes a good story moves a business, and build the team and the system that does it.</p>
-  </div>
-</section>
+
 
 <footer id="contact">
   <span class="slug">Next</span>
