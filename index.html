@@ -12,19 +12,19 @@
 <style>
 /* Layout: a dark desk at night with sheets of copy paper on it. The page edits itself in front of the reader, then shows the work. A magazine feature about one body of work. Large type and one live graphic open it; four long case studies carry it; the system and the product follow as evidence. */
 :root{
-  --paper:#161c2b; --card:#1f2738; --ink:#eef1f7; --ink2:#c0c9d8; --rule:#36415a; --wash:#252f44; --mark:#ffe35a;
+  --paper:#f7f4ee; --card:#ffffff; --ink:#15171d; --ink2:#4a5263; --rule:#ddd6c9; --wash:#eee9df; --mark:#ffe35a;
   --sheet:#f4efe4; --sheet-ink:#1a1a1f; --sheet-mute:#8d8676; --pencil:#e23a2e; --bluepencil:#2f5fe8;
-  --blue:#7ea2ff; --cp:#ff5fa2; --rd:#7ea2ff; --rm:#3fd0a8; --jr:#f0c15a;
-  --ship:#4fd08a; --fix:#f0b04a; --hold:#9db0e6; --kill:#ff7b7b; --shadow:0 30px 80px -24px rgba(0,0,0,.9);
+  --blue:#3657d6; --cp:#ff5fa2; --rd:#3657d6; --rm:#0f8f6c; --jr:#c08400;
+  --ship:#12824a; --fix:#b86e00; --hold:#3d5aa8; --kill:#c62828; --shadow:0 24px 60px -28px rgba(30,25,50,.35);
   --display:"Newsreader",Georgia,"Times New Roman",serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   --hand:"Caveat","Bradley Hand","Segoe Print",cursive;
-  color-scheme:dark;
+  color-scheme:light;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:radial-gradient(1400px 800px at 70% -10%,#2a3a63 0%,transparent 65%),var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
+body{background:radial-gradient(1400px 800px at 75% -10%,#ffe3ef 0%,transparent 60%),var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;text-wrap:balance;letter-spacing:-.018em}
 h1{font-size:clamp(2.7rem,8.2vw,6.4rem);line-height:.98}
@@ -74,7 +74,7 @@ nav.top a:hover{color:var(--ink);text-decoration:underline;text-underline-offset
 
 section{padding-block:clamp(56px,9vw,112px)}
 .sec-head{display:grid;gap:16px;margin-bottom:clamp(30px,5vw,56px)}
-.band{background:#1b2232;border-block:1px solid var(--rule)}
+.band{background:#efe9de;border-block:1px solid var(--rule)}
 
 .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border-top:1px solid var(--ink)}
 .three>div{padding:22px 26px 6px 0;display:grid;gap:8px;align-content:start}
@@ -228,18 +228,18 @@ a.clip{color:inherit;text-decoration:underline;text-decoration-color:var(--rule)
 .sigrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
 .si{display:flex;flex-direction:column;gap:10px;padding:20px;border:1px solid var(--rule);border-top:3px solid #d71920;border-radius:10px;background:var(--card);color:var(--ink);text-decoration:none;transition:transform .2s,border-color .2s}
 .si:hover{transform:translateY(-3px);border-color:var(--ink2)}
-.si .kick{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#ff6b6b}
+.si .kick{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#c8102e}
 .si h4{font-family:var(--display);font-size:1.3rem;line-height:1.18;font-weight:500;margin:0}
 .si p{margin:0;font-size:.9rem;color:var(--ink2);flex:1}
-.si .src{font-size:.78rem;color:var(--ink2);display:flex;justify-content:space-between;gap:12px}.si .src i{font-style:normal;color:var(--ink)}
+.si .src{font-size:.78rem;color:var(--ink2);display:flex;justify-content:space-between;gap:12px;white-space:nowrap}.si .src i{white-space:nowrap}.si .src i{font-style:normal;color:var(--ink)}
 </style>
-<style>.series{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:clamp(22px,3vw,36px)}.series ol{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--ink)}.series li{display:grid;grid-template-columns:56px 1fr;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--rule)}.series li b{font-family:var(--mono);color:#ff5fa2;font-weight:500}.series li span{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.15}</style>
+<style>.series{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:clamp(22px,3vw,36px)}.series ol{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--ink)}.series li{display:grid;grid-template-columns:56px 1fr;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--rule)}.series li b{font-family:var(--mono);color:#d6246e;font-weight:500}.series li span{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.15}</style>
 <style>.fgrid video.fvid{grid-column:1/-1;width:100%;max-width:520px;justify-self:center;aspect-ratio:1/1;border-radius:8px;box-shadow:var(--shadow);background:#000;display:block}</style>
 <style>
 .feature .fig{font-family:var(--display);font-size:clamp(3rem,6vw,4.6rem);line-height:.9;font-weight:500;margin:6px 0 16px}
 .feature .fig small{display:block;font-family:var(--body);font-size:.9rem;color:var(--ink2);line-height:1.4;margin-top:8px}
 .feature h3{margin-top:8px}
-:root{--ink2:#c0c9d8}
+:root{--ink2:#4a5263}
 .slug{font-size:.78rem!important;letter-spacing:.08em}
 .note,.list small,.si .src,.fstats span,.vid small,.feature dd{font-size:max(.88rem,1em)}
 .list small,.si .src,.vid small,.note{color:var(--ink2)}
@@ -434,7 +434,7 @@ details.more-facts summary::after{content:" +"}details.more-facts[open] summary:
         <li>The Cheapest Email Ticket Is the One That Never Arrives<small>MSSP Alert, sponsored column, September 2026</small></li>
         <li>The Renewal Clock Is Already Running on Your Clients' AI Use<small>MSSP Alert, sponsored column, September 2026</small></li>
         <li>Nearly Every Tenant Already Had a High-Risk AI Moment This Month<small>MSSP Alert, sponsored column, October 2026</small></li>
-        <li>The Basics<small>A weekly essay series with no product in it: Pixar's lost backup, Hubble's mirror, an airline's chatbot</small></li>
+        <li>The Basics<small>Five true stories with no product in them: a bomber, a film, a power grid, a space telescope and a warship</small></li>
       </ul></div>
       <div style="display:grid;gap:12px"><h4>A second house voice</h4>
         <div class="voice"><span>Fund the loan. <em>Securely.</em></span><span>Build the project. <em>Securely.</em></span><span>Cut the scene. <em>Securely.</em></span></div>
